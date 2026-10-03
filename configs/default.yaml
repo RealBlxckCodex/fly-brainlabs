@@ -1,0 +1,61 @@
+# Fly Brain Lab default configuration. Everything here is logged with every run.
+dataset: malecns_v1.0          # malecns_v1.0 | flywire_v783
+scenario: looming
+control_period_ms: 1.0         # sensor/motor refresh period
+log_period_ms: 5.0
+
+# LIF parameters (Shiu et al. 2024). w_syn is calibrated per dataset, see below.
+brain:
+  dt: 0.1
+  v_0: -52.0
+  v_rst: -52.0
+  v_th: -45.0
+  t_mbr: 20.0
+  tau: 5.0
+  t_rfc: 2.2
+  t_dly: 1.8
+  w_syn: 0.275
+  f_poi: 250.0
+
+# Per-dataset overrides (merged on top of the above).
+dataset_overrides:
+  flywire_v783:
+    brain: {w_syn: 0.275, f_poi: 250.0}          # Shiu et al. original
+  malecns_v1.0:
+    # MaleCNS has ~2.3x more synapses than FlyWire (incl. VNC); with 0.275 mV the network
+    # runs away (17.7k neurons active from 34 sugar GRNs). Calibration criterion: recruit a
+    # similarly sparse population as the FlyWire reference does with Shiu's 0.275 mV
+    # (sugar GRNs 150 Hz: FlyWire 340 active; MaleCNS 314 at 0.15 mV, 781 at 0.16, 12.5k at 0.2).
+    # See scripts/calibrate_wsyn.py and docs/validation/wsyn_scan_*.json.
+    # f_poi keeps the Poisson kick at 68.75 mV like the original model.
+    brain: {w_syn: 0.15, f_poi: 458.333}
+
+world:
+  gravity: 981.0               # cm/s^2 (981 = Earth, 0 = weightless)
+  air_density: 0.00128         # g/cm^3
+  air_viscosity: 0.000185      # poise
+
+body:
+  kind: simple                 # simple | flybody
+  walk_speed: 3.0
+  jump_speed: 60.0
+  baseline_thrust: 1.0         # flight thrust at zero DN drive, in Earth body weights
+  thrust_range: 0.6
+  flight_turn_rate: 3.0         # keep closed-loop gain < 1 (see A-15)
+  flapping_damping_tau: 0.01
+  haltere_reflex_gain: 0.0     # engineered attitude reflex, OFF by default
+
+# Sensory encoders (engineered, see docs/assumptions.md); defaults in sensory/encoders.py
+sensory:
+  tonic: {}                    # e.g. {dnp09: 40} constant drive in Hz
+ablate_senses: []              # any of: vision, vision_L, vision_R, looming, photoreceptors, olfaction, jo
+
+# DN -> motor readout (hand-set; defaults in motor/readout.py)
+readout: {}
+
+experiment:
+  n_trials: 8
+  workers: 4
+  shuffle_control: true        # every experiment also runs a shuffled-connectome control
+  shuffle_mode: targets        # targets | degree
+  keep_trajectories: 3         # store full logs for the first N trials

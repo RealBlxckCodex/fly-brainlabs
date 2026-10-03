@@ -1,0 +1,57 @@
+# Named neuron groups for MaleCNS v1.0 (types from body-annotations 'type' column).
+# Side = soma side (somaSide, else rootSide). Optic-lobe neurons on side L see the left eye.
+
+# --- looming / escape (Giant Fiber pathway) -------------------------------
+giant_fiber:   {type: [DNp01]}
+giant_fiber_L: {type: [DNp01], side: L}
+giant_fiber_R: {type: [DNp01], side: R}
+lplc2:         {type: [LPLC2]}
+lplc2_L:       {type: [LPLC2], side: L}
+lplc2_R:       {type: [LPLC2], side: R}
+lc4:           {type: [LC4]}
+lc4_L:         {type: [LC4], side: L}
+lc4_R:         {type: [LC4], side: R}
+looming_vpn:   {union: [lplc2, lc4]}
+escape_dns:    {type: [DNp01, DNp02, DNp04, DNp06, DNp11]}
+ttmn:          {type: [TTMn]}          # jump muscle motor neuron (VNC, only in MaleCNS)
+
+# --- steering / locomotion descending neurons --------------------------------
+dna02_L:  {type: [DNa02], side: L}
+dna02_R:  {type: [DNa02], side: R}
+dna01_L:  {type: [DNa01], side: L}
+dna01_R:  {type: [DNa01], side: R}
+dnp11_L:  {type: [DNp11], side: L}
+dnp11_R:  {type: [DNp11], side: R}
+dnp02_L:  {type: [DNp02], side: L}
+dnp02_R:  {type: [DNp02], side: R}
+dnp20_L:  {type: [DNp20], side: L}       # strongest DN targets of VS cells (connectome analysis)
+dnp20_R:  {type: [DNp20], side: R}
+dnb06_L:  {type: [DNb06], side: L}
+dnb06_R:  {type: [DNb06], side: R}
+mdn:      {type: [MDN]}                # moonwalker: backward walking
+dnp09:    {type: [DNp09]}              # forward walking (P9-like; assumption, see docs)
+dng02:    {type_regex: '^DNg02'}       # wingbeat amplitude / flight power
+dng02_L:  {type_regex: '^DNg02', side: L}
+dng02_R:  {type_regex: '^DNg02', side: R}
+descending: {superclass: [descending_neuron]}
+
+# --- senses -------------------------------------------------------------------
+jo_ce:     {type_regex: '^JO-[CE]'}    # Johnston's organ C/E: static deflection (gravity, wind)
+jo_ce_L:   {type_regex: '^JO-[CE]', side: L}
+jo_ce_R:   {type_regex: '^JO-[CE]', side: R}
+# lobula plate tangential cells (wide-field optic flow): HS = horizontal, VS = vertical motion
+hs_L:      {type: [HSE, HSN, HSS], side: L}
+hs_R:      {type: [HSE, HSN, HSS], side: R}
+vs_L:      {type: [VS], side: L}
+vs_R:      {type: [VS], side: R}
+jo_c_L:    {type_regex: '^JO-C', side: L}
+jo_c_R:    {type_regex: '^JO-C', side: R}
+jo_e_L:    {type_regex: '^JO-E', side: L}
+jo_e_R:    {type_regex: '^JO-E', side: R}
+jo_all:    {type_regex: '^JO-'}
+r1r6_L:    {type: [R1-R6], side: L}
+r1r6_R:    {type: [R1-R6], side: R}
+orn_attr_L: {type: [ORN_DM1, ORN_DM2, ORN_DM4, ORN_VM2], side: L}   # vinegar / fruit odour glomeruli
+orn_attr_R: {type: [ORN_DM1, ORN_DM2, ORN_DM4, ORN_VM2], side: R}
+sugar_grn: {type: [LB3b, LB3c]}        # labellar sugar GRNs (FlyWire 'sugar' subclass types)
+mn9:       {type: [MN9]}               # proboscis extension motor neuron

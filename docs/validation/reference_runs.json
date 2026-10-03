@@ -1,0 +1,1497 @@
+{
+ "looming": {
+  "runs": [
+   {
+    "label": "intact",
+    "run_id": "20261003-165930_looming_6e9d3f",
+    "control_run_id": "20261003-165930_looming_6e9d3f_shuffle"
+   },
+   {
+    "label": "giant fiber lesion",
+    "run_id": "20261003-170013_looming_8ce6f6",
+    "control_run_id": "20261003-170013_looming_8ce6f6_shuffle"
+   },
+   {
+    "label": "LPLC2+LC4 lesion",
+    "run_id": "20261003-170102_looming_35655d",
+    "control_run_id": "20261003-170102_looming_35655d_shuffle"
+   }
+  ],
+  "comparisons": {
+   "vs_shuffle": {
+    "run_a": "20261003-165930_looming_6e9d3f",
+    "run_b": "20261003-165930_looming_6e9d3f_shuffle",
+    "label_a": "looming: intact",
+    "label_b": "looming: intact [shuffle control]",
+    "scenario": [
+     "looming",
+     "looming"
+    ],
+    "metrics": [
+     {
+      "metric": "takeoff",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.0,
+      "std_a": 0.0,
+      "std_b": 0.0,
+      "diff": -1.0,
+      "diff_ci95": [
+       -1.0,
+       -1.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 7.39602301050679e-07,
+      "proportion_a": 1.0,
+      "proportion_b": 0.0,
+      "p_holm": 1.479204602101358e-06
+     },
+     {
+      "metric": "time_before_collision_ms",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 261.9166666666665,
+      "mean_b": null
+     },
+     {
+      "metric": "theta_at_takeoff_deg",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 8.20738885059252,
+      "mean_b": null
+     },
+     {
+      "metric": "escape_dir_error_deg",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 107.76106011651207,
+      "mean_b": null
+     },
+     {
+      "metric": "gf_spikes",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 11.833333333333334,
+      "mean_b": 0.0,
+      "std_a": 10.66714014100681,
+      "std_b": 0.0,
+      "diff": -11.833333333333334,
+      "diff_ci95": [
+       -17.583333333333332,
+       -6.333333333333333
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.002733192783134498,
+      "p_mannwhitney": 1.0165439331280308e-05,
+      "cohens_d": -1.568823533474467,
+      "p_holm": 0.002733192783134498
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_giant fiber lesion": {
+    "run_a": "20261003-165930_looming_6e9d3f",
+    "run_b": "20261003-170013_looming_8ce6f6",
+    "label_a": "looming: intact",
+    "label_b": "looming: giant fiber lesion",
+    "scenario": [
+     "looming",
+     "looming"
+    ],
+    "metrics": [
+     {
+      "metric": "takeoff",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.0,
+      "std_a": 0.0,
+      "std_b": 0.0,
+      "diff": -1.0,
+      "diff_ci95": [
+       -1.0,
+       -1.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 7.39602301050679e-07,
+      "proportion_a": 1.0,
+      "proportion_b": 0.0,
+      "p_holm": 1.479204602101358e-06
+     },
+     {
+      "metric": "time_before_collision_ms",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 261.9166666666665,
+      "mean_b": null
+     },
+     {
+      "metric": "theta_at_takeoff_deg",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 8.20738885059252,
+      "mean_b": null
+     },
+     {
+      "metric": "escape_dir_error_deg",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 107.76106011651207,
+      "mean_b": null
+     },
+     {
+      "metric": "gf_spikes",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 11.833333333333334,
+      "mean_b": 0.0,
+      "std_a": 10.66714014100681,
+      "std_b": 0.0,
+      "diff": -11.833333333333334,
+      "diff_ci95": [
+       -17.583333333333332,
+       -6.333333333333333
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.002733192783134498,
+      "p_mannwhitney": 1.0165439331280308e-05,
+      "cohens_d": -1.568823533474467,
+      "p_holm": 0.002733192783134498
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_LPLC2+LC4 lesion": {
+    "run_a": "20261003-165930_looming_6e9d3f",
+    "run_b": "20261003-170102_looming_35655d",
+    "label_a": "looming: intact",
+    "label_b": "looming: LPLC2+LC4 lesion",
+    "scenario": [
+     "looming",
+     "looming"
+    ],
+    "metrics": [
+     {
+      "metric": "takeoff",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.25,
+      "std_a": 0.0,
+      "std_b": 0.45226701686664544,
+      "diff": -0.75,
+      "diff_ci95": [
+       -1.0,
+       -0.5
+      ],
+      "test": "fisher_exact",
+      "p_value": 0.000336519046978059,
+      "proportion_a": 1.0,
+      "proportion_b": 0.25,
+      "p_holm": 0.001682595234890295
+     },
+     {
+      "metric": "time_before_collision_ms",
+      "n_a": 12,
+      "n_b": 3,
+      "mean_a": 261.9166666666665,
+      "mean_b": 142.3333333333454,
+      "std_a": 27.79293021070081,
+      "std_b": 80.27660514329138,
+      "diff": -119.58333333332112,
+      "diff_ci95": [
+       -176.41666666664844,
+       -29.164583333331194
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.11903664900348299,
+      "p_mannwhitney": 0.020807139680873523,
+      "cohens_d": -2.9483686227503667,
+      "p_holm": 0.35710994701044896
+     },
+     {
+      "metric": "theta_at_takeoff_deg",
+      "n_a": 12,
+      "n_b": 3,
+      "mean_a": 8.20738885059252,
+      "mean_b": 16.240563986928265,
+      "std_a": 0.7889233147206942,
+      "std_b": 6.282802518090253,
+      "diff": 8.033175136335744,
+      "diff_ci95": [
+       0.8759435098132079,
+       12.05319777912748
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.15667419432800286,
+      "p_mannwhitney": 0.020807139680873523,
+      "cohens_d": 3.1270255368157804,
+      "p_holm": 0.35710994701044896
+     },
+     {
+      "metric": "escape_dir_error_deg",
+      "n_a": 12,
+      "n_b": 3,
+      "mean_a": 107.76106011651207,
+      "mean_b": 72.94681018113481,
+      "std_a": 56.06365935217754,
+      "std_b": 55.74889098485032,
+      "diff": -34.81424993537726,
+      "diff_ci95": [
+       -92.75568844209054,
+       23.16736337499303
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.402998284796303,
+      "p_mannwhitney": 0.44835164835164837,
+      "cohens_d": -0.6215126892784758,
+      "p_holm": 0.402998284796303
+     },
+     {
+      "metric": "gf_spikes",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 11.833333333333334,
+      "mean_b": 0.3333333333333333,
+      "std_a": 10.66714014100681,
+      "std_b": 0.6513389472789296,
+      "diff": -11.5,
+      "diff_ci95": [
+       -17.333333333333332,
+       -5.916666666666667
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.0032957119463204424,
+      "p_mannwhitney": 6.768868141930544e-05,
+      "cohens_d": -1.521797055302446,
+      "p_holm": 0.01318284778528177
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   }
+  },
+  "figure": "docs/validation/ref_looming.png"
+ },
+ "spider": {
+  "runs": [
+   {
+    "label": "intact",
+    "run_id": "20261003-170152_spider_84d162",
+    "control_run_id": "20261003-170152_spider_84d162_shuffle"
+   },
+   {
+    "label": "LPLC2+LC4 lesion",
+    "run_id": "20261003-170330_spider_350101",
+    "control_run_id": "20261003-170330_spider_350101_shuffle"
+   },
+   {
+    "label": "giant fiber lesion",
+    "run_id": "20261003-170435_spider_085bdc",
+    "control_run_id": "20261003-170435_spider_085bdc_shuffle"
+   }
+  ],
+  "comparisons": {
+   "vs_shuffle": {
+    "run_a": "20261003-170152_spider_84d162",
+    "run_b": "20261003-170152_spider_84d162_shuffle",
+    "label_a": "spider: intact",
+    "label_b": "spider: intact [shuffle control]",
+    "scenario": [
+     "spider",
+     "spider"
+    ],
+    "metrics": [
+     {
+      "metric": "survived",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.0,
+      "std_a": 0.0,
+      "std_b": 0.0,
+      "diff": -1.0,
+      "diff_ci95": [
+       -1.0,
+       -1.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 7.39602301050679e-07,
+      "proportion_a": 1.0,
+      "proportion_b": 0.0,
+      "p_holm": 1.479204602101358e-06
+     },
+     {
+      "metric": "survival_time_s",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.499999999999851,
+      "mean_b": 0.6671666666666094,
+      "std_a": 2.319180260577507e-16,
+      "std_b": 0.08658241825863666,
+      "diff": -0.8328333333332416,
+      "diff_ci95": [
+       -0.8813354166665694,
+       -0.78716666666658
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 2.1251986612288862e-12,
+      "p_mannwhitney": 1.0268915615154512e-05,
+      "cohens_d": -13.603272106329461,
+      "p_holm": 6.375595983686659e-12
+     },
+     {
+      "metric": "takeoff",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.0,
+      "std_a": 0.0,
+      "std_b": 0.0,
+      "diff": -1.0,
+      "diff_ci95": [
+       -1.0,
+       -1.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 7.39602301050679e-07,
+      "proportion_a": 1.0,
+      "proportion_b": 0.0,
+      "p_holm": 1.479204602101358e-06
+     },
+     {
+      "metric": "escape_latency_ms",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 462.91666666662644,
+      "mean_b": null
+     },
+     {
+      "metric": "escape_dir_error_deg",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 68.28805959843577,
+      "mean_b": null
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_LPLC2+LC4 lesion": {
+    "run_a": "20261003-170152_spider_84d162",
+    "run_b": "20261003-170330_spider_350101",
+    "label_a": "spider: intact",
+    "label_b": "spider: LPLC2+LC4 lesion",
+    "scenario": [
+     "spider",
+     "spider"
+    ],
+    "metrics": [
+     {
+      "metric": "survived",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.08333333333333333,
+      "std_a": 0.0,
+      "std_b": 0.28867513459481287,
+      "diff": -0.9166666666666666,
+      "diff_ci95": [
+       -1.0,
+       -0.75
+      ],
+      "test": "fisher_exact",
+      "p_value": 9.614829913658828e-06,
+      "proportion_a": 1.0,
+      "proportion_b": 0.08333333333333333,
+      "p_holm": 1.9229659827317657e-05
+     },
+     {
+      "metric": "survival_time_s",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.499999999999851,
+      "mean_b": 0.7306666666666025,
+      "std_a": 2.319180260577507e-16,
+      "std_b": 0.25631455580036233,
+      "diff": -0.7693333333332485,
+      "diff_ci95": [
+       -0.8742499999999036,
+       -0.6095812499999327
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 5.000784443390416e-07,
+      "p_mannwhitney": 3.7584607138243073e-05,
+      "cohens_d": -4.244790665860589,
+      "p_holm": 1.5002353330171247e-06
+     },
+     {
+      "metric": "takeoff",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.08333333333333333,
+      "std_a": 0.0,
+      "std_b": 0.28867513459481287,
+      "diff": -0.9166666666666666,
+      "diff_ci95": [
+       -1.0,
+       -0.75
+      ],
+      "test": "fisher_exact",
+      "p_value": 9.614829913658828e-06,
+      "proportion_a": 1.0,
+      "proportion_b": 0.08333333333333333,
+      "p_holm": 1.9229659827317657e-05
+     },
+     {
+      "metric": "escape_latency_ms",
+      "n_a": 12,
+      "n_b": 1,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 462.91666666662644,
+      "mean_b": 531.9999999999521
+     },
+     {
+      "metric": "escape_dir_error_deg",
+      "n_a": 12,
+      "n_b": 1,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 68.28805959843577,
+      "mean_b": 20.96505905541202
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_giant fiber lesion": {
+    "run_a": "20261003-170152_spider_84d162",
+    "run_b": "20261003-170435_spider_085bdc",
+    "label_a": "spider: intact",
+    "label_b": "spider: giant fiber lesion",
+    "scenario": [
+     "spider",
+     "spider"
+    ],
+    "metrics": [
+     {
+      "metric": "survived",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.0,
+      "std_a": 0.0,
+      "std_b": 0.0,
+      "diff": -1.0,
+      "diff_ci95": [
+       -1.0,
+       -1.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 7.39602301050679e-07,
+      "proportion_a": 1.0,
+      "proportion_b": 0.0,
+      "p_holm": 1.479204602101358e-06
+     },
+     {
+      "metric": "survival_time_s",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.499999999999851,
+      "mean_b": 0.6671666666666094,
+      "std_a": 2.319180260577507e-16,
+      "std_b": 0.08658241825863666,
+      "diff": -0.8328333333332416,
+      "diff_ci95": [
+       -0.8813354166665694,
+       -0.78716666666658
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 2.1251986612288862e-12,
+      "p_mannwhitney": 1.0268915615154512e-05,
+      "cohens_d": -13.603272106329461,
+      "p_holm": 6.375595983686659e-12
+     },
+     {
+      "metric": "takeoff",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 1.0,
+      "mean_b": 0.0,
+      "std_a": 0.0,
+      "std_b": 0.0,
+      "diff": -1.0,
+      "diff_ci95": [
+       -1.0,
+       -1.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 7.39602301050679e-07,
+      "proportion_a": 1.0,
+      "proportion_b": 0.0,
+      "p_holm": 1.479204602101358e-06
+     },
+     {
+      "metric": "escape_latency_ms",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 462.91666666662644,
+      "mean_b": null
+     },
+     {
+      "metric": "escape_dir_error_deg",
+      "n_a": 12,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 68.28805959843577,
+      "mean_b": null
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   }
+  },
+  "figure": "docs/validation/ref_spider.png"
+ },
+ "zerog": {
+  "runs": [
+   {
+    "label": "1 g intact",
+    "run_id": "20261003-170537_zerog_b81a55",
+    "control_run_id": "20261003-170537_zerog_b81a55_shuffle"
+   },
+   {
+    "label": "0 g intact",
+    "run_id": "20261003-170640_zerog_582a29",
+    "control_run_id": "20261003-170640_zerog_582a29_shuffle"
+   },
+   {
+    "label": "0 g HS/VS lesion",
+    "run_id": "20261003-170741_zerog_1eb7ac",
+    "control_run_id": "20261003-170741_zerog_1eb7ac_shuffle"
+   },
+   {
+    "label": "1 g JO ablated",
+    "run_id": "20261003-170848_zerog_b28f6e",
+    "control_run_id": "20261003-170848_zerog_b28f6e_shuffle"
+   }
+  ],
+  "comparisons": {
+   "vs_shuffle": {
+    "run_a": "20261003-170537_zerog_b81a55",
+    "run_b": "20261003-170537_zerog_b81a55_shuffle",
+    "label_a": "zerog: 1 g intact",
+    "label_b": "zerog: 1 g intact [shuffle control]",
+    "scenario": [
+     "zerog",
+     "zerog"
+    ],
+    "metrics": [
+     {
+      "metric": "mean_angspeed_rad_s",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 3.9841533017068635,
+      "mean_b": 4.3812273607739245,
+      "std_a": 0.5569941600807827,
+      "std_b": 0.5924155891188042,
+      "diff": 0.39707405906706095,
+      "diff_ci95": [
+       -0.07319802476720068,
+       0.8735848497802644
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.14000253518114872,
+      "p_mannwhitney": 0.10410988966022681,
+      "cohens_d": 0.690590356779511,
+      "p_holm": 0.7000126759057436
+     },
+     {
+      "metric": "mean_tilt_deg",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 46.96027933591243,
+      "mean_b": 50.65544129022406,
+      "std_a": 33.560541373390585,
+      "std_b": 31.998660067176612,
+      "diff": 3.6951619543116294,
+      "diff_ci95": [
+       -23.62416277228866,
+       31.22228231797787
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.8039063053224352,
+      "p_mannwhitney": 0.7337299956962472,
+      "cohens_d": 0.11269550773363606,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "corrective_roll_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.5476809027225048,
+      "mean_b": 0.0,
+      "std_a": 0.13713420802616688,
+      "std_b": 0.0,
+      "diff": -0.5476809027225048,
+      "diff_ci95": [
+       -0.6197952655850311,
+       -0.4586846245353566
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 4.975921759552142e-07,
+      "p_mannwhitney": 6.386444750436982e-05,
+      "cohens_d": -5.648027371369767,
+      "p_holm": 3.4831452316864995e-06
+     },
+     {
+      "metric": "control_effort",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.3194282522800979,
+      "mean_b": 0.0,
+      "std_a": 0.10617497012683512,
+      "std_b": 0.0,
+      "diff": -0.3194282522800979,
+      "diff_ci95": [
+       -0.38263516577620255,
+       -0.2590100234775105
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 5.4097350867737244e-06,
+      "p_mannwhitney": 6.386444750436982e-05,
+      "cohens_d": -4.2546728860861185,
+      "p_holm": 3.245841052064235e-05
+     },
+     {
+      "metric": "corrective_yaw_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.05642441134452404,
+      "mean_b": 0.0,
+      "std_a": 0.1362436042459219,
+      "std_b": 0.0,
+      "diff": -0.05642441134452404,
+      "diff_ci95": [
+       -0.14647219399215558,
+       0.013581289035362728
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.22276140012519102,
+      "p_mannwhitney": 1.0,
+      "cohens_d": -0.5856874398912029,
+      "p_holm": 0.8910456005007641
+     },
+     {
+      "metric": "drift_cm",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 106.66984321852983,
+      "mean_b": 111.08770203219171,
+      "std_a": 53.50072780666662,
+      "std_b": 50.59985481999036,
+      "diff": 4.41785881366188,
+      "diff_ci95": [
+       -39.22921812303448,
+       47.83382007376754
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.8516608012907766,
+      "p_mannwhitney": 0.7337299956962472,
+      "cohens_d": 0.08484380065423552,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "upright_fraction",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.6000000000000001,
+      "mean_b": 0.5298507462686566,
+      "std_a": 0.29575104736639884,
+      "std_b": 0.24253412422957424,
+      "diff": -0.07014925373134351,
+      "diff_ci95": [
+       -0.2910572139303483,
+       0.15671641791044771
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.569389977902062,
+      "p_mannwhitney": 0.49580527609991076,
+      "cohens_d": -0.25937524911450965,
+      "p_holm": 1.0
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_0 g intact": {
+    "run_a": "20261003-170537_zerog_b81a55",
+    "run_b": "20261003-170640_zerog_582a29",
+    "label_a": "zerog: 1 g intact",
+    "label_b": "zerog: 0 g intact",
+    "scenario": [
+     "zerog",
+     "zerog"
+    ],
+    "metrics": [
+     {
+      "metric": "mean_angspeed_rad_s",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 3.9841533017068635,
+      "mean_b": 2.8759467024935472,
+      "std_a": 0.5569941600807827,
+      "std_b": 0.37929393848997617,
+      "diff": -1.1082065992133163,
+      "diff_ci95": [
+       -1.5210263947248017,
+       -0.7348789386168213
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 8.986692991377344e-05,
+      "p_mannwhitney": 0.00024612812790522973,
+      "cohens_d": -2.325717308987511,
+      "p_holm": 0.000629068509396414
+     },
+     {
+      "metric": "mean_tilt_deg",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 46.96027933591243,
+      "mean_b": 25.08479262560441,
+      "std_a": 33.560541373390585,
+      "std_b": 7.084118188834635,
+      "diff": -21.87548671030802,
+      "diff_ci95": [
+       -42.8396224261319,
+       -2.5638464337211264
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.07193638153594788,
+      "p_mannwhitney": 0.47267559351158717,
+      "cohens_d": -0.9019401929465397,
+      "p_holm": 0.21580914460784362
+     },
+     {
+      "metric": "corrective_roll_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.5476809027225048,
+      "mean_b": 0.3153964129032916,
+      "std_a": 0.13713420802616688,
+      "std_b": 0.15163514400518505,
+      "diff": -0.23228448981921318,
+      "diff_ci95": [
+       -0.34665175248294733,
+       -0.10702592404608068
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.0021074763173395874,
+      "p_mannwhitney": 0.00728455700947966,
+      "cohens_d": -1.6067644811834252,
+      "p_holm": 0.010537381586697937
+     },
+     {
+      "metric": "control_effort",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.3194282522800979,
+      "mean_b": 0.19633624999698035,
+      "std_a": 0.10617497012683512,
+      "std_b": 0.04129696084466036,
+      "diff": -0.12309200228311756,
+      "diff_ci95": [
+       -0.19045415023251797,
+       -0.05710767081706042
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.005310855924877872,
+      "p_mannwhitney": 0.00579535854433471,
+      "cohens_d": -1.5280287477489314,
+      "p_holm": 0.021243423699511488
+     },
+     {
+      "metric": "corrective_yaw_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.05642441134452404,
+      "mean_b": 0.027440566572442388,
+      "std_a": 0.1362436042459219,
+      "std_b": 0.06011882552677305,
+      "diff": -0.028983844772081654,
+      "diff_ci95": [
+       -0.1238353512011449,
+       0.05262187278642325
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.5493932985742263,
+      "p_mannwhitney": 0.701019183487054,
+      "cohens_d": -0.2752476254727944,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "drift_cm",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 106.66984321852983,
+      "mean_b": 205.00121983114855,
+      "std_a": 53.50072780666662,
+      "std_b": 1.353565527738453,
+      "diff": 98.33137661261871,
+      "diff_ci95": [
+       64.12394841345211,
+       126.40941650828991
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.00025491860529024585,
+      "p_mannwhitney": 0.0028272720911168077,
+      "cohens_d": 2.5984147823144133,
+      "p_holm": 0.001529511631741475
+     },
+     {
+      "metric": "upright_fraction",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.6000000000000001,
+      "mean_b": 0.5980099502487561,
+      "std_a": 0.29575104736639884,
+      "std_b": 0.2971296745947386,
+      "diff": -0.0019900497512439497,
+      "diff_ci95": [
+       -0.24478855721393042,
+       0.24328358208955225
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.9881885186766385,
+      "p_mannwhitney": 0.8797843010569926,
+      "cohens_d": -0.006713135703081821,
+      "p_holm": 1.0
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_0 g HS/VS lesion": {
+    "run_a": "20261003-170537_zerog_b81a55",
+    "run_b": "20261003-170741_zerog_1eb7ac",
+    "label_a": "zerog: 1 g intact",
+    "label_b": "zerog: 0 g HS/VS lesion",
+    "scenario": [
+     "zerog",
+     "zerog"
+    ],
+    "metrics": [
+     {
+      "metric": "mean_angspeed_rad_s",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 3.9841533017068635,
+      "mean_b": 3.0496537678208755,
+      "std_a": 0.5569941600807827,
+      "std_b": 0.4060234125422593,
+      "diff": -0.934499533885988,
+      "diff_ci95": [
+       -1.3510748129825092,
+       -0.554736580108939
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.0005329515028342923,
+      "p_mannwhitney": 0.00043963875262656454,
+      "cohens_d": -1.9173558005454951,
+      "p_holm": 0.002131806011337169
+     },
+     {
+      "metric": "mean_tilt_deg",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 46.96027933591243,
+      "mean_b": 26.237481605380907,
+      "std_a": 33.560541373390585,
+      "std_b": 7.788357920881971,
+      "diff": -20.722797730531525,
+      "diff_ci95": [
+       -41.49140659378342,
+       -1.3229567416415478
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.08642422429760113,
+      "p_mannwhitney": 0.47267559351158717,
+      "cohens_d": -0.850636074978504,
+      "p_holm": 0.2592726728928034
+     },
+     {
+      "metric": "corrective_roll_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.5476809027225048,
+      "mean_b": 0.0,
+      "std_a": 0.13713420802616688,
+      "std_b": 0.0,
+      "diff": -0.5476809027225048,
+      "diff_ci95": [
+       -0.6197952655850311,
+       -0.4586846245353566
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 4.975921759552142e-07,
+      "p_mannwhitney": 6.386444750436982e-05,
+      "cohens_d": -5.648027371369767,
+      "p_holm": 3.4831452316864995e-06
+     },
+     {
+      "metric": "control_effort",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.3194282522800979,
+      "mean_b": 0.0,
+      "std_a": 0.10617497012683512,
+      "std_b": 0.0,
+      "diff": -0.3194282522800979,
+      "diff_ci95": [
+       -0.38263516577620255,
+       -0.2590100234775105
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 5.4097350867737244e-06,
+      "p_mannwhitney": 6.386444750436982e-05,
+      "cohens_d": -4.2546728860861185,
+      "p_holm": 3.245841052064235e-05
+     },
+     {
+      "metric": "corrective_yaw_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.05642441134452404,
+      "mean_b": 0.0,
+      "std_a": 0.1362436042459219,
+      "std_b": 0.0,
+      "diff": -0.05642441134452404,
+      "diff_ci95": [
+       -0.14647219399215558,
+       0.013581289035362728
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.22276140012519102,
+      "p_mannwhitney": 1.0,
+      "cohens_d": -0.5856874398912029,
+      "p_holm": 0.44552280025038205
+     },
+     {
+      "metric": "drift_cm",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 106.66984321852983,
+      "mean_b": 204.58952470968512,
+      "std_a": 53.50072780666662,
+      "std_b": 1.5308450084233145,
+      "diff": 97.91968149115529,
+      "diff_ci95": [
+       63.72444828188193,
+       126.00139464724514
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.0002626314342498953,
+      "p_mannwhitney": 0.0028272720911168077,
+      "cohens_d": 2.5873047553781308,
+      "p_holm": 0.0013131571712494765
+     },
+     {
+      "metric": "upright_fraction",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.6000000000000001,
+      "mean_b": 0.5646766169154229,
+      "std_a": 0.29575104736639884,
+      "std_b": 0.3113882968915594,
+      "diff": -0.035323383084577165,
+      "diff_ci95": [
+       -0.2821019900497514,
+       0.21144278606965172
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.7977442559515918,
+      "p_mannwhitney": 0.7912601064031788,
+      "cohens_d": -0.1163214781828531,
+      "p_holm": 0.7977442559515918
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_1 g JO ablated": {
+    "run_a": "20261003-170537_zerog_b81a55",
+    "run_b": "20261003-170848_zerog_b28f6e",
+    "label_a": "zerog: 1 g intact",
+    "label_b": "zerog: 1 g JO ablated",
+    "scenario": [
+     "zerog",
+     "zerog"
+    ],
+    "metrics": [
+     {
+      "metric": "mean_angspeed_rad_s",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 3.9841533017068635,
+      "mean_b": 4.056135642919605,
+      "std_a": 0.5569941600807827,
+      "std_b": 0.5252640726258525,
+      "diff": 0.07198234121274139,
+      "diff_ci95": [
+       -0.36749639210773916,
+       0.5305021664568962
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.7696381388574542,
+      "p_mannwhitney": 0.6775849579524755,
+      "cohens_d": 0.1329653535062016,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "mean_tilt_deg",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 46.96027933591243,
+      "mean_b": 50.335457875736026,
+      "std_a": 33.560541373390585,
+      "std_b": 31.780720658356977,
+      "diff": 3.375178539823594,
+      "diff_ci95": [
+       -24.209910871712758,
+       30.431825572191126
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.8199883344980176,
+      "p_mannwhitney": 0.7337299956962472,
+      "cohens_d": 0.1032709505816206,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "corrective_roll_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.5476809027225048,
+      "mean_b": 0.5163798866817384,
+      "std_a": 0.13713420802616688,
+      "std_b": 0.15645424328570443,
+      "diff": -0.031301016040766405,
+      "diff_ci95": [
+       -0.15411375137419464,
+       0.08826465053064021
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.6400593751004277,
+      "p_mannwhitney": 0.7913367801006604,
+      "cohens_d": -0.21277036430579982,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "control_effort",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.3194282522800979,
+      "mean_b": 0.3405594816474595,
+      "std_a": 0.10617497012683512,
+      "std_b": 0.09023555593795979,
+      "diff": 0.021131229367361615,
+      "diff_ci95": [
+       -0.06224632709161438,
+       0.10025095966716847
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.6374589876425203,
+      "p_mannwhitney": 0.47267559351158717,
+      "cohens_d": 0.2144690259484476,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "corrective_yaw_corr",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.05642441134452404,
+      "mean_b": 0.04280071588405081,
+      "std_a": 0.1362436042459219,
+      "std_b": 0.1399992344027846,
+      "diff": -0.013623695460473234,
+      "diff_ci95": [
+       -0.1315241275129279,
+       0.09604327331663838
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.8279379204793028,
+      "p_mannwhitney": 0.9053711701409971,
+      "cohens_d": -0.09862653189911864,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "drift_cm",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 106.66984321852983,
+      "mean_b": 110.87649785084913,
+      "std_a": 53.50072780666662,
+      "std_b": 52.89286319555285,
+      "diff": 4.2066546323192995,
+      "diff_ci95": [
+       -40.20967077928242,
+       48.356194420708704
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.8616250403273594,
+      "p_mannwhitney": 0.7913367801006604,
+      "cohens_d": 0.07907592810077486,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "upright_fraction",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.6000000000000001,
+      "mean_b": 0.5517412935323384,
+      "std_a": 0.29575104736639884,
+      "std_b": 0.2712895376723863,
+      "diff": -0.04825870646766173,
+      "diff_ci95": [
+       -0.2831094527363184,
+       0.19205223880597003
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.7082400838292614,
+      "p_mannwhitney": 0.6497786137862427,
+      "cohens_d": -0.17005437152885272,
+      "p_holm": 1.0
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   }
+  },
+  "figure": "docs/validation/ref_zerog.png"
+ },
+ "lightchoice": {
+  "runs": [
+   {
+    "label": "intact",
+    "run_id": "20261003-163816_lightchoice_11d604",
+    "control_run_id": "20261003-163816_lightchoice_11d604_shuffle"
+   },
+   {
+    "label": "vision ablated",
+    "run_id": "20261003-164426_lightchoice_704eae",
+    "control_run_id": "20261003-164426_lightchoice_704eae_shuffle"
+   }
+  ],
+  "comparisons": {
+   "vs_shuffle": {
+    "run_a": "20261003-163816_lightchoice_11d604",
+    "run_b": "20261003-163816_lightchoice_11d604_shuffle",
+    "label_a": "lightchoice: intact",
+    "label_b": "lightchoice: intact [shuffle control]",
+    "scenario": [
+     "lightchoice",
+     "lightchoice"
+    ],
+    "metrics": [
+     {
+      "metric": "chose",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 0.4166666666666667,
+      "mean_b": 0.0,
+      "std_a": 0.5149286505444373,
+      "std_b": 0.0,
+      "diff": -0.4166666666666667,
+      "diff_ci95": [
+       -0.6666666666666666,
+       -0.16666666666666666
+      ],
+      "test": "fisher_exact",
+      "p_value": 0.03726708074534161,
+      "proportion_a": 0.4166666666666667,
+      "proportion_b": 0.0,
+      "p_holm": 0.07453416149068322
+     },
+     {
+      "metric": "chose_bright",
+      "n_a": 5,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 0.2,
+      "mean_b": null
+     },
+     {
+      "metric": "chose_left",
+      "n_a": 5,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 0.6,
+      "mean_b": null
+     },
+     {
+      "metric": "progress_x_cm",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 2.17904476818684,
+      "mean_b": 2.5754193765319036,
+      "std_a": 2.0110806347538897,
+      "std_b": 0.4412990438308924,
+      "diff": 0.39637460834506344,
+      "diff_ci95": [
+       -0.8761490464607841,
+       1.2551061356531508
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.5174011506656961,
+      "p_mannwhitney": 0.010193104991108252,
+      "cohens_d": 0.27225720031158085,
+      "p_holm": 0.5174011506656961
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_vision ablated": {
+    "run_a": "20261003-163816_lightchoice_11d604",
+    "run_b": "20261003-164426_lightchoice_704eae",
+    "label_a": "lightchoice: intact",
+    "label_b": "lightchoice: vision ablated",
+    "scenario": [
+     "lightchoice",
+     "lightchoice"
+    ],
+    "metrics": [
+     {
+      "metric": "chose",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 0.4166666666666667,
+      "mean_b": 0.08333333333333333,
+      "std_a": 0.5149286505444373,
+      "std_b": 0.28867513459481287,
+      "diff": -0.33333333333333337,
+      "diff_ci95": [
+       -0.6666666666666666,
+       0.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 0.1549525988885257,
+      "proportion_a": 0.4166666666666667,
+      "proportion_b": 0.08333333333333333,
+      "p_holm": 0.30644487545628807
+     },
+     {
+      "metric": "chose_bright",
+      "n_a": 5,
+      "n_b": 1,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 0.2,
+      "mean_b": 0.0
+     },
+     {
+      "metric": "chose_left",
+      "n_a": 5,
+      "n_b": 1,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": 0.6,
+      "mean_b": 1.0
+     },
+     {
+      "metric": "progress_x_cm",
+      "n_a": 12,
+      "n_b": 12,
+      "mean_a": 2.17904476818684,
+      "mean_b": 1.2775420718218018,
+      "std_a": 2.0110806347538897,
+      "std_b": 0.37166481361310044,
+      "diff": -0.9015026963650383,
+      "diff_ci95": [
+       -2.1671474526391608,
+       -0.041913469510371885
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.15322243772814403,
+      "p_mannwhitney": 0.12602212177037309,
+      "cohens_d": -0.6233900940661962,
+      "p_holm": 0.30644487545628807
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   }
+  },
+  "figure": "docs/validation/ref_lightchoice.png"
+ },
+ "foraging": {
+  "runs": [
+   {
+    "label": "intact",
+    "run_id": "20261003-164910_foraging_77dcf3",
+    "control_run_id": "20261003-164910_foraging_77dcf3_shuffle"
+   },
+   {
+    "label": "olfaction ablated",
+    "run_id": "20261003-165310_foraging_d86e4f",
+    "control_run_id": "20261003-165310_foraging_d86e4f_shuffle"
+   }
+  ],
+  "comparisons": {
+   "vs_shuffle": {
+    "run_a": "20261003-164910_foraging_77dcf3",
+    "run_b": "20261003-164910_foraging_77dcf3_shuffle",
+    "label_a": "foraging: intact",
+    "label_b": "foraging: intact [shuffle control]",
+    "scenario": [
+     "foraging",
+     "foraging"
+    ],
+    "metrics": [
+     {
+      "metric": "reached",
+      "n_a": 8,
+      "n_b": 8,
+      "mean_a": 0.0,
+      "mean_b": 0.0,
+      "std_a": 0.0,
+      "std_b": 0.0,
+      "diff": 0.0,
+      "diff_ci95": [
+       0.0,
+       0.0
+      ],
+      "test": "fisher_exact",
+      "p_value": 1.0,
+      "proportion_a": 0.0,
+      "proportion_b": 0.0,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "final_distance_cm",
+      "n_a": 8,
+      "n_b": 8,
+      "mean_a": 4.962093277361438,
+      "mean_b": 5.623150027825368,
+      "std_a": 2.409225598607344,
+      "std_b": 2.351901026775937,
+      "diff": 0.6610567504639295,
+      "diff_ci95": [
+       -1.568986470697833,
+       2.8510785296442087
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.5874330261070152,
+      "p_mannwhitney": 0.8784770784770783,
+      "cohens_d": 0.2776690866449242,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "approach_cm",
+      "n_a": 8,
+      "n_b": 8,
+      "mean_a": -0.962093277361438,
+      "mean_b": -1.6231500278253679,
+      "std_a": 2.409225598607344,
+      "std_b": 2.351901026775937,
+      "diff": -0.6610567504639299,
+      "diff_ci95": [
+       -2.8510785296442087,
+       1.5689864706978307
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.5874330261070149,
+      "p_mannwhitney": 0.8784770784770783,
+      "cohens_d": -0.2776690866449243,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "path_efficiency",
+      "n_a": 0,
+      "n_b": 0,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": null,
+      "mean_b": null
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   },
+   "vs_olfaction ablated": {
+    "run_a": "20261003-164910_foraging_77dcf3",
+    "run_b": "20261003-165310_foraging_d86e4f",
+    "label_a": "foraging: intact",
+    "label_b": "foraging: olfaction ablated",
+    "scenario": [
+     "foraging",
+     "foraging"
+    ],
+    "metrics": [
+     {
+      "metric": "reached",
+      "n_a": 8,
+      "n_b": 8,
+      "mean_a": 0.0,
+      "mean_b": 0.125,
+      "std_a": 0.0,
+      "std_b": 0.3535533905932738,
+      "diff": 0.125,
+      "diff_ci95": [
+       0.0,
+       0.375
+      ],
+      "test": "fisher_exact",
+      "p_value": 1.0,
+      "proportion_a": 0.0,
+      "proportion_b": 0.125,
+      "p_holm": 1.0
+     },
+     {
+      "metric": "final_distance_cm",
+      "n_a": 8,
+      "n_b": 8,
+      "mean_a": 4.962093277361438,
+      "mean_b": 13.200624078358286,
+      "std_a": 2.409225598607344,
+      "std_b": 14.19107085385524,
+      "diff": 8.238530800996848,
+      "diff_ci95": [
+       0.5458271465046688,
+       18.608938066606765
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.14717441369189607,
+      "p_mannwhitney": 0.1605283605283605,
+      "cohens_d": 0.8094303250298748,
+      "p_holm": 0.4415232410756882
+     },
+     {
+      "metric": "approach_cm",
+      "n_a": 8,
+      "n_b": 8,
+      "mean_a": -0.962093277361438,
+      "mean_b": -9.200624078358288,
+      "std_a": 2.409225598607344,
+      "std_b": 14.19107085385524,
+      "diff": -8.23853080099685,
+      "diff_ci95": [
+       -18.60893806660677,
+       -0.5458271465046705
+      ],
+      "test": "welch_t + mann_whitney",
+      "p_value": 0.14717441369189607,
+      "p_mannwhitney": 0.1605283605283605,
+      "cohens_d": -0.809430325029875,
+      "p_holm": 0.4415232410756882
+     },
+     {
+      "metric": "path_efficiency",
+      "n_a": 0,
+      "n_b": 1,
+      "note": "fewer than 2 valid trials in a run; no test",
+      "mean_a": null,
+      "mean_b": 0.7785828054319074
+     }
+    ],
+    "note": "diff = mean_b - mean_a; p_holm corrected across the metrics listed"
+   }
+  },
+  "figure": "docs/validation/ref_foraging.png"
+ }
+}

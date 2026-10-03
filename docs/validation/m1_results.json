@@ -1,0 +1,70 @@
+{
+  "protocol": "Poisson activation 150 Hz (sugar) / 100 Hz (LPLC2), 1000 ms, w/o lesion",
+  "flywire_v783": {
+    "n_sugar_grn": 20,
+    "mn9_rate_ours_hz": [
+      78.66666666666667,
+      4.818944098266987
+    ],
+    "mn9_rate_brian2_hz": [
+      77.5,
+      5.469613027140647
+    ],
+    "mn9_rate_shuffled_hz": [
+      0.0,
+      0.0
+    ],
+    "n_trials_ours": 30,
+    "n_trials_brian2": 6,
+    "n_active_ours": 436,
+    "n_active_brian2": 396,
+    "rate_correlation_responsive_neurons": 0.9990998680328,
+    "n_responsive_neurons": 418,
+    "wall_s_per_trial_ours": 5.121410814921061,
+    "wall_s_per_trial_brian2": 12.205190102259317
+  },
+  "malecns_v1.0": {
+    "sugar": {
+      "source": "sugar_grn",
+      "n_source": 34,
+      "rate_hz": 150.0,
+      "n_active": 663,
+      "mn9": {
+        "intact_hz": [
+          15.75,
+          2.0155644370746373
+        ],
+        "shuffled_hz": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "looming": {
+      "source": "lplc2",
+      "n_source": 185,
+      "rate_hz": 100.0,
+      "n_active": 2252,
+      "giant_fiber": {
+        "intact_hz": [
+          204.6875,
+          1.919269066598011
+        ],
+        "shuffled_hz": [
+          0.375,
+          0.33071891388307384
+        ]
+      },
+      "ttmn": {
+        "intact_hz": [
+          46.3125,
+          0.8637671850678283
+        ],
+        "shuffled_hz": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

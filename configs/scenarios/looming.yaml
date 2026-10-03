@@ -1,0 +1,8 @@
+# M3: looming escape reflex (Giant Fiber pathway). Stimulus approaches the standing fly.
+scenario_cfg:
+  duration: 0.6
+  radius: 0.5          # cm
+  speed: 25.0          # cm/s  (r/v = 20 ms)
+  start_distance: 10.0
+  azimuth_deg: [-180, 180]
+  elevation_deg: 20.0
