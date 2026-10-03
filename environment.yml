@@ -1,0 +1,8 @@
+# conda alternative to `python -m venv .venv && pip install -e ".[llm,dev]"`
+name: flybrainlab
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -e ".[llm,dev]"

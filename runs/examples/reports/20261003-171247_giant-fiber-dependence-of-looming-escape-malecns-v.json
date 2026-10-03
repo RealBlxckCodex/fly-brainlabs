@@ -1,0 +1,70 @@
+{
+  "title": "Giant Fiber dependence of looming escape (malecns_v1.0, looming)",
+  "hypothesis": "Looming-evoked takeoff in the model is mediated by the Giant Fiber (DNp01) and requires the real synaptic wiring from LPLC2/LC4 onto it.",
+  "intervention": "Silence both DNp01 neurons (all their synapses removed, input clamped). Control: synaptic targets shuffled per presynaptic neuron (out-degree, weights and signs preserved).",
+  "runs": [
+    "20261003-171139_looming_aa8130",
+    "20261003-171211_looming_b8aaad"
+  ],
+  "controls": [
+    "20261003-171139_looming_aa8130_shuffle",
+    "20261003-171211_looming_b8aaad_shuffle"
+  ],
+  "findings": [
+    {
+      "statement": "Intact connectome: mean takeoff",
+      "run_id": "20261003-171139_looming_aa8130",
+      "metric": "takeoff",
+      "statistic": "mean",
+      "value": 1.0
+    },
+    {
+      "statement": "Giant fiber lesion: mean takeoff",
+      "run_id": "20261003-171211_looming_b8aaad",
+      "metric": "takeoff",
+      "statistic": "mean",
+      "value": 0.0
+    },
+    {
+      "statement": "Shuffled connectome: mean takeoff",
+      "run_id": "20261003-171139_looming_aa8130_shuffle",
+      "metric": "takeoff",
+      "statistic": "mean",
+      "value": 0.0
+    },
+    {
+      "statement": "Intact: Giant Fiber spikes per trial",
+      "run_id": "20261003-171139_looming_aa8130",
+      "metric": "gf_spikes",
+      "statistic": "mean",
+      "value": 6.625
+    },
+    {
+      "statement": "Shuffled: Giant Fiber spikes per trial",
+      "run_id": "20261003-171139_looming_aa8130_shuffle",
+      "metric": "gf_spikes",
+      "statistic": "mean",
+      "value": 0.0
+    }
+  ],
+  "comparisons": [
+    {
+      "run_a": "20261003-171139_looming_aa8130",
+      "run_b": "20261003-171211_looming_b8aaad",
+      "metric": "takeoff",
+      "p_value": 0.0002,
+      "interpretation": "intact vs GF lesion: Fisher exact test on takeoff"
+    },
+    {
+      "run_a": "20261003-171139_looming_aa8130",
+      "run_b": "20261003-171139_looming_aa8130_shuffle",
+      "metric": "takeoff",
+      "p_value": 0.0002,
+      "interpretation": "intact vs shuffle: Fisher exact test on takeoff"
+    }
+  ],
+  "spread": "Std across seeds of takeoff: intact 0.000, lesion 0.000, shuffle 0.000. Std of gf_spikes intact 7.269.",
+  "control_assessment": "Shuffling synaptic targets changed mean takeoff from 1.000 to 0.000 (Fisher p = 0.0002), and Giant Fiber spikes from 6.625 to 0.000.",
+  "limitations": "Takeoff is read out from DNp01 firing by a hand-set threshold, so the lesion result partly follows from the readout design; the informative part is that LPLC2/LC4 drive reaches DNp01 through the real wiring but not through the shuffled one. The jump direction readout is hand-set and not validated.",
+  "conclusion": "In this model, looming-evoked takeoff depends on the identified Giant Fiber pathway and on the specific connectome wiring (lost after target shuffling). This is a statement about the wiring diagram plus model assumptions, not about real flies."
+}

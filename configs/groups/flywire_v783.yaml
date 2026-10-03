@@ -1,0 +1,63 @@
+# Named neuron groups for FlyWire v783 (types from Schlegel et al. annotations;
+# cell_type, falling back to hemibrain_type). FlyWire is brain-only: no VNC, so no
+# TTMn or leg/wing motor neurons.
+
+giant_fiber:   {type: [DNp01]}
+giant_fiber_L: {type: [DNp01], side: L}
+giant_fiber_R: {type: [DNp01], side: R}
+lplc2:         {type: [LPLC2]}
+lplc2_L:       {type: [LPLC2], side: L}
+lplc2_R:       {type: [LPLC2], side: R}
+lc4:           {type: [LC4]}
+lc4_L:         {type: [LC4], side: L}
+lc4_R:         {type: [LC4], side: R}
+looming_vpn:   {union: [lplc2, lc4]}
+escape_dns:    {type: [DNp01, DNp02, DNp04, DNp06, DNp11]}
+
+dna02_L:  {type: [DNa02], side: L}
+dna02_R:  {type: [DNa02], side: R}
+dna01_L:  {type: [DNa01], side: L}
+dna01_R:  {type: [DNa01], side: R}
+dnp11_L:  {type: [DNp11], side: L}
+dnp11_R:  {type: [DNp11], side: R}
+dnp02_L:  {type: [DNp02], side: L}
+dnp02_R:  {type: [DNp02], side: R}
+dnp20_L:  {type: [DNp20], side: L}       # strongest DN targets of VS cells (connectome analysis)
+dnp20_R:  {type: [DNp20], side: R}
+dnb06_L:  {type: [DNb06], side: L}
+dnb06_R:  {type: [DNb06], side: R}
+mdn:      {type: [MDN]}
+dnp09:    {type: [DNp09]}
+dng02:    {type_regex: '^DNg02'}
+dng02_L:  {type_regex: '^DNg02', side: L}
+dng02_R:  {type_regex: '^DNg02', side: R}
+descending: {superclass: [descending]}
+
+jo_ce:     {type_regex: '^JO-[CE]'}
+jo_ce_L:   {type_regex: '^JO-[CE]', side: L}
+jo_ce_R:   {type_regex: '^JO-[CE]', side: R}
+# lobula plate tangential cells (wide-field optic flow): HS = horizontal, VS = vertical motion
+hs_L:      {type: [HSE, HSN, HSS], side: L}
+hs_R:      {type: [HSE, HSN, HSS], side: R}
+vs_L:      {type_regex: '^VS[1-8]$', side: L}
+vs_R:      {type_regex: '^VS[1-8]$', side: R}
+jo_c_L:    {type_regex: '^JO-C', side: L}
+jo_c_R:    {type_regex: '^JO-C', side: R}
+jo_e_L:    {type_regex: '^JO-E', side: L}
+jo_e_R:    {type_regex: '^JO-E', side: R}
+jo_all:    {type_regex: '^JO-'}
+r1r6_L:    {type: [R1-6], side: L}
+r1r6_R:    {type: [R1-6], side: R}
+orn_attr_L: {type: [ORN_DM1, ORN_DM2, ORN_DM4, ORN_VM2], side: L}
+orn_attr_R: {type: [ORN_DM1, ORN_DM2, ORN_DM4, ORN_VM2], side: R}
+# The 21 sugar GRNs of the Shiu et al. 2024 example (example.ipynb, FlyWire v630 ids).
+# 720575940620900446 is not present in v783 and is skipped -> 20 neurons.
+sugar_grn:
+  ids: [720575940624963786, 720575940630233916, 720575940637568838, 720575940638202345,
+        720575940617000768, 720575940630797113, 720575940632889389, 720575940621754367,
+        720575940621502051, 720575940640649691, 720575940639332736, 720575940616885538,
+        720575940639198653, 720575940620900446, 720575940617937543, 720575940632425919,
+        720575940633143833, 720575940612670570, 720575940628853239, 720575940629176663,
+        720575940611875570]
+# MN9 as used by Shiu et al. (annotated CB0701 in FlyWire).
+mn9: {ids: [720575940660219265]}

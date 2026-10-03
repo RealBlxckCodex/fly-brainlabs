@@ -1,0 +1,9 @@
+# Odour-guided walking to a food source around an obstacle. Tonic locomotor drive onto
+# DNp09 (engineered) makes the fly walk; steering must come from the connectome.
+scenario_cfg:
+  duration: 4.0
+  source: [4.0, 0.0]
+  plume_sigma: 2.5
+  heading_jitter_deg: 90
+sensory:
+  tonic: {dnp09: 60}

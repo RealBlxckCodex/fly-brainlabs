@@ -1,0 +1,7 @@
+# Free flight with adjustable gravity; air density/viscosity unchanged.
+scenario_cfg:
+  duration: 1.0
+  start_height: 8.0
+  init_angvel: 4.0
+world:
+  gravity: 0.0

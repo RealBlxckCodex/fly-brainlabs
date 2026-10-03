@@ -1,0 +1,58 @@
+[
+  {
+    "w_syn": 0.08,
+    "sugar_grn_n_active": 89,
+    "sugar_grn->mn9_hz": 0.0,
+    "lplc2_n_active": 570,
+    "lplc2->giant_fiber_hz": 164.0
+  },
+  {
+    "w_syn": 0.1,
+    "sugar_grn_n_active": 101,
+    "sugar_grn->mn9_hz": 0.0,
+    "lplc2_n_active": 753,
+    "lplc2->giant_fiber_hz": 175.0
+  },
+  {
+    "w_syn": 0.12,
+    "sugar_grn_n_active": 143,
+    "sugar_grn->mn9_hz": 0.0,
+    "lplc2_n_active": 1143,
+    "lplc2->giant_fiber_hz": 188.0
+  },
+  {
+    "w_syn": 0.14,
+    "sugar_grn_n_active": 188,
+    "sugar_grn->mn9_hz": 1.0,
+    "lplc2_n_active": 1597,
+    "lplc2->giant_fiber_hz": 197.0
+  },
+  {
+    "w_syn": 0.15,
+    "sugar_grn_n_active": 314,
+    "sugar_grn->mn9_hz": 13.0,
+    "lplc2_n_active": 1935,
+    "lplc2->giant_fiber_hz": 206.0
+  },
+  {
+    "w_syn": 0.16,
+    "sugar_grn_n_active": 781,
+    "sugar_grn->mn9_hz": 30.0,
+    "lplc2_n_active": 2274,
+    "lplc2->giant_fiber_hz": 210.0
+  },
+  {
+    "w_syn": 0.2,
+    "sugar_grn_n_active": 12498,
+    "sugar_grn->mn9_hz": 39.0,
+    "lplc2_n_active": 5791,
+    "lplc2->giant_fiber_hz": 225.0
+  },
+  {
+    "w_syn": 0.275,
+    "sugar_grn_n_active": 17673,
+    "sugar_grn->mn9_hz": 75.0,
+    "lplc2_n_active": 19145,
+    "lplc2->giant_fiber_hz": 228.0
+  }
+]

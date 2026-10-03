@@ -1,0 +1,20 @@
+{
+  "dataset": "malecns_v1.0",
+  "n_descending": 1314,
+  "n_azimuths": 24,
+  "seeds": 2,
+  "lambda": 50.0,
+  "intact": {
+    "takeoff_fraction": 1.0,
+    "cv_mean_abs_error_deg": 53.610365689914964,
+    "cv_median_abs_error_deg": 41.822623067037426,
+    "n_active_dn": 27
+  },
+  "shuffled": {
+    "takeoff_fraction": 0.0,
+    "cv_mean_abs_error_deg": 68.95705351803484,
+    "cv_median_abs_error_deg": 62.14661036607551,
+    "n_active_dn": 7
+  },
+  "chance_mean_abs_error_deg": 90.0
+}

@@ -1,0 +1,8 @@
+# M4: scripted spider stalks then rushes the fly.
+scenario_cfg:
+  duration: 1.5
+  spider_radius: 0.4
+  start_distance: [5.0, 7.0]
+  stalk_speed: 6.0
+  rush_speed: 30.0
+  rush_distance: 3.0

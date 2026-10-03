@@ -1,0 +1,23 @@
+[
+  {
+    "w_syn": 0.2,
+    "sugar_grn_n_active": 194,
+    "sugar_grn->mn9_hz": 22.0,
+    "lplc2_n_active": 551,
+    "lplc2->giant_fiber_hz": 118.0
+  },
+  {
+    "w_syn": 0.275,
+    "sugar_grn_n_active": 340,
+    "sugar_grn->mn9_hz": 74.0,
+    "lplc2_n_active": 780,
+    "lplc2->giant_fiber_hz": 136.0
+  },
+  {
+    "w_syn": 0.35,
+    "sugar_grn_n_active": 442,
+    "sugar_grn->mn9_hz": 86.0,
+    "lplc2_n_active": 1213,
+    "lplc2->giant_fiber_hz": 145.0
+  }
+]

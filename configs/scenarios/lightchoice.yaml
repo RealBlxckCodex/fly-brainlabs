@@ -1,0 +1,14 @@
+# T-maze light choice (bright vs dark arm, bright side randomised per trial).
+scenario_cfg:
+  duration: 3.0
+  bright: 5.0
+  dark: 0.1
+sensory:
+  tonic: {dnp09: 60}
+# Modelling assumption (logged with the run, applied before shuffling): R1-R6 are
+# histaminergic and hyperpolarise lamina neurons; with zero spontaneous activity a LIF
+# network cannot transmit that inhibition, so photoreceptor output is treated as an
+# excitatory (rate-coded, sign-inverted) relay. See docs/assumptions.md (A-11).
+model_mods:
+  - {op: set_sign, pre: r1r6_L, sign: 1}
+  - {op: set_sign, pre: r1r6_R, sign: 1}
